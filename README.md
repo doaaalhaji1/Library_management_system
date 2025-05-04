@@ -1,4 +1,3 @@
-Laravel
 📚 System Overview
 A bilingual (Arabic/English) library management system built with Laravel that supports:
 
@@ -33,6 +32,7 @@ View borrowing records
 Member can:
 
 Register account
+
 Browse available books
 
 Borrow available books
@@ -45,7 +45,8 @@ Category system (Programming, Physics, etc.)
 Availability status tracking
 
 Search and filtering
-Technical Implementation
+
+🛠️ Technical Implementation
 Framework: Laravel 10+
 
 Database: MySQL
@@ -89,6 +90,8 @@ bash
 php artisan key:generate
 php artisan migrate --seed
 Compile assets:
+
+bash
 npm run dev
 Start server:
 
@@ -120,7 +123,7 @@ resources/
 routes/
   web.php
   api.php
-  🌟 Seeded Data
+🌟 Seeded Data
 The system comes pre-loaded with:
 
 2 user roles (Librarian/Member)
