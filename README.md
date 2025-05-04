@@ -1,135 +1,95 @@
-📚 System Overview
-A bilingual (Arabic/English) library management system built with Laravel that supports:
+# Library Management System
 
-RTL (Arabic) and LTR (English) interfaces
+## Project Description
+A bilingual (Arabic/English) library management system built with Laravel featuring:
 
-User roles (Librarian/Member)
+- Complete RTL (Arabic) and LTR (English) interfaces
+- Multi-role authentication (Librarian/Member)
+- Book management with categories
+- Borrowing functionality
+- Localized content for both languages
 
-Book management with categories
+## Features
+- **User Management**:
+  - Librarian: Create users, manage books, view reports
+  - Member: Register, browse books, borrow available items
 
-Book borrowing functionality
+- **Book Management**:
+  - Add/edit/delete books
+  - Categorization system
+  - Availability status
+  - Advanced search
 
-User authentication
+- **Multi-language Support**:
+  - Full RTL/LTR layouts
+  - Language switching
+  - Translated interface
 
-🌍 Bilingual Features
-Complete RTL support for Arabic interface
+## Installation
+### Requirements
+- PHP 8.2+
+- MySQL 8.0+
+- Composer
+- Node.js
 
-LTR layout for English interface
+### Steps
+1. Clone repo:
+```bash
+git clone https://github.com/yourrepo/library-system.git
+cd library-system```
 
-Language switching functionality
-
-Translated all interface elements
-
-👥 User Management
-Librarian can:
-
-Create new user accounts
-
-Manage all books
-
-View borrowing records
-
-Member can:
-
-Register account
-
-Browse available books
-
-Borrow available books
-
-📖 Book Management
-Book CRUD operations
-
-Category system (Programming, Physics, etc.)
-
-Availability status tracking
-
-Search and filtering
-
-🛠️ Technical Implementation
-Framework: Laravel 10+
-
-Database: MySQL
-
-Frontend: Blade templates with Bootstrap
-
-Localization: Laravel localization features
-
-Testing: Database seeding with factories
-
-🚀 Installation
-Prerequisites
-PHP 8.0+
-
-Composer
-
-MySQL
-
-Node.js (for frontend dependencies)
-
-Setup Steps
-Clone repository:
-
-bash
-git clone [repository-url]
-cd library-system
 Install dependencies:
 
-bash
+```
 composer install
-npm install
-Configure environment:
+npm install```
+Configure:
 
-bash
+
 cp .env.example .env
-Edit .env with your database credentials
-
-Generate key and migrate:
+# Edit .env with your DB credentials
+Migrate & seed:
 
 bash
-php artisan key:generate
 php artisan migrate --seed
-Compile assets:
+Build assets:
 
 bash
-npm run dev
-Start server:
+npm run build
+Run server:
 
-bash
+```bash
 php artisan serve
-📂 Project Structure
+File Structure
 app/
   Models/
     User.php
     Book.php
     Category.php
-    BorrowRecord.php
 database/
   factories/
     UserFactory.php
     BookFactory.php
   migrations/
-  seeders/
 resources/
-  lang/
-    ar/
-    en/
   views/
     layouts/
-      rtl.blade.php
-      ltr.blade.php
+      app.blade.php
     books/
     auth/
-routes/
-  web.php
-  api.php
-🌟 Seeded Data
-The system comes pre-loaded with:
+```
+Default Accounts
+Librarian:
 
-2 user roles (Librarian/Member)
+Email: admin@library.com
 
-5 book categories
+Password: password
 
-50 sample books
+Member:
 
-10 test users
+Email: user@library.com
+
+Password: password
+
+License
+MIT License
